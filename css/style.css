@@ -1,1 +1,167 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	scrollbar-width: auto;
+	scrollbar-color: #0011ff #292929;
+}
+
+::-webkit-scrollbar-button {
+	background-image: url("");
+	background-repeat: no-repeat;
+	width: 5px;
+	height: 0px;
+}
+::-webkit-scrollbar-track {
+	background-color: #eeeaea;
+	box-shadow: 0px 0px 3px rgb(88, 88, 88) inset;
+}
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #5675ff;
+	box-shadow: 0px 1px 1px #140088 inset;
+	background-image: url("https://yraaa.ru/_pu/24/59610063.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 44px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: #244cff;
+	box-shadow: 0px 1px 1px #140088 inset;
+}
+::-webkit-scrollbar-thumb:active {
+	background-color: #0400e0;
+	box-shadow: inset 0 0 1px #000277;
+}
+::-webkit-resizer {
+	background-image: url("");
+	background-repeat: no-repeat;
+	width: 7px;
+	height: 0px;
+}
+::-webkit-scrollbar {
+	width: 11px;
+	height: auto;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+.memos {
+	display: flex;
+	height: 100%;
+}
+
+.memos * {
+	font-family: sans-serif;
+}
+
+.memos__sidebar {
+	border-right: 3px solid #6769ff;
+	background-color: rgb(255, 255, 252);
+	flex-shrink: 0;
+	overflow-y: auto;
+	padding: 16px;
+	width: 400px;
+}
+
+.memos__add {
+	background-color: #3a16da;
+	border: none;
+	border-radius: 7px;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 16px;
+	padding: 12px 0;
+	width: 100%;
+}
+
+.memos__add:hover {
+	background-color: #266bff;
+	transition: all 1s;
+}
+
+.memos__add:focus {
+	background-color: #0301a0e0;
+}
+
+.memos__reminder {
+	background-color: #12005c;
+	border-radius: 4px;
+	font-weight: bold;
+	color: #f4f2fa;
+	width: 95%;
+	text-align: center;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.memos__list-item {
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.memos__list-item--chosen,
+#start-note {
+	background-color: #eeeeeef1;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+.memos__little-title,
+.memos__little-updated {
+	padding: 10px;
+}
+
+.memos__little-title {
+	text-align: center;
+	font-size: 20px;
+}
+
+.memos__little-body {
+	padding: 0 10px;
+	color: #03000f;
+}
+
+.memos__little-updated {
+	color: #888888;
+	font-style: italic;
+	text-align: right;
+	text-transform: capitalize;
+}
+
+.memos__preview {
+	display: flex;
+	flex-direction: column;
+	padding: 32px 48px;
+	flex-grow: 1;
+}
+
+.memos__title,
+.memos__body {
+	border: none;
+	outline: none;
+	width: 100%;
+}
+
+.memos__title {
+	font-size: 48px;
+	font-weight: bold;
+}
+
+.memos__body {
+	flex-grow: 1;
+	font-size: 19px;
+	line-height: 1.5;
+	margin-top: 32px;
+	resize: none;
+}
 
